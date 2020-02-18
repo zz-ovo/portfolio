@@ -21,7 +21,7 @@ body{
     font-family: $font_m;
     background-color: #fff;
 }
-#contents > #section{
+#contents > section{
     position: relative;
 }
 .cursor {
@@ -40,21 +40,6 @@ body{
     z-index: 10000;
   }
   
-  .cursor_back{
-      position: fixed;
-      background-color: rgb(250, 255, 204);
-      width:50px;
-      height:50px;
-      border-radius: 50%;
-      margin: -10px 0 0 -10px;
-      will-change: none;
-      -webkit-user-select: auto;
-         -moz-user-select: auto;
-          -ms-user-select: auto;
-              user-select: auto;
-      pointer-events: none;
-      z-index: 9000;
-  }
 
 #section1{
     .shapes{
@@ -196,33 +181,31 @@ body{
  
         } //text rotation end
 
-        // mobile about
+// media query mobile text----------
         .m-text{
         display: none;
         position: relative;
         text-align: center;
-        // height: 10vh;
-        font-size: 4vw;
-        font-family: $font_k;
+        font-size: 3.5vw;
+        margin:10px 40px;
         span{
             display: inline-block;
-            font-weight: 700;
-            letter-spacing:0.8vw;
+            font-weight:600;
             line-height: 5vw;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            
         }
         p{
             display: inline-block;
-            font-size: 2vw;
-            line-height: 3vw;
-
+            font-size: 3.2vw;
+            line-height: 4vw;
+            color:#696969;
         }
         }
 
 
     .about_r{
         width: 50%;
-        height:100%;
         float: left;
         
         img{
@@ -240,7 +223,6 @@ body{
                 line-height: 3vw;
                 text-decoration: underline;
                 font-weight: 600;
-                overflow: hidden;
                &:hover ~i{
                    color:#ff5700;
                 margin-left:1vw;
@@ -344,7 +326,6 @@ body{
         width:50%;  
         height:100%;
         overflow: hidden;
-        // font-family: $font_r;
         
         .skill{
             position: relative;
@@ -382,7 +363,6 @@ body{
                     font-family:Verdana, Geneva, Tahoma, sans-serif;
                 }
                 }
-            
          }
     }
     .right{
@@ -393,6 +373,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         h2{
             display: inline-block;
             position: relative;
@@ -402,6 +383,43 @@ body{
  
         }
     }
+    // media query mobile skill----------
+    .m-skill{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: none;
+        span{
+            width:100%;
+           line-height: 8vw;           
+           font-size: 6vw;
+           display: inline-block;
+           &.hov1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+              }
+           &.hov2{
+              font-weight: 100;
+             
+              }
+              &.hov3{
+                  font-weight: 900;
+              }
+              &.hov4{
+                  font-family:$font_p;
+              }
+              &.hov5{
+                  font-family:Georgia, 'Times New Roman', Times, serif;
+                  font-style: italic;
+              }
+              &.hov6{
+                  font-family:Verdana, Geneva, Tahoma, sans-serif;
+              }
+        }            
+}
 }
 
 #section4{
@@ -427,7 +445,6 @@ body{
                 position: absolute;
                 padding:5%;
                color:#fff;
-            //    background-color: rgba(0, 0, 0, 0.7);
                line-height: 1.8vw;
                overflow: hidden;
                 opacity:0;
@@ -439,8 +456,6 @@ body{
                    font-size: 0.8vw;
                }
             }
-           
-
                 &::after{
                     content: "";
                     position: absolute;
@@ -505,13 +520,11 @@ body{
 }
 
 #section5{
-  
     width:100%;
     height:30vh;
     background: rgb(0, 56, 160);
     margin-top: 10%;
     color:#fff;
-    // z-index:9999;
     overflow: hidden;
     span{
         width:100%;
@@ -531,11 +544,8 @@ body{
         height:27vh;
         position: relative;
         color:#fff;
-        // display: flex;
-        // flex-wrap: wrap;
         h2{
-            width:100%;
-          //   height:2vw;  
+            width:100%;  
             display: inline-block;
             font-size: 1vw;
             font-weight: 400;
@@ -556,7 +566,7 @@ body{
             .qrcode{
                 width:8vw;
                 height:8vw;
-                background: url(../icons/kakaotalk_qr.png)100%/cover;
+                background: url(../img/icons/kakaotalk_qr.png)100%/cover;
                margin-left: auto;
                margin-right: 0;
                position: absolute;
@@ -578,6 +588,8 @@ body{
         .f_b{
             width:100%;
             height:auto;
+            position: absolute;
+            bottom:50px;
             p{
                 font-size: 0.7vw;
                 width:50%;
