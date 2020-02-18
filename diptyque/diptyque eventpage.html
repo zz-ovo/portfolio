@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="event_css/reset.css">
+    <link rel="stylesheet" href="event_css/191125_diptyque.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/diptyque/android-icon-192x192.png">
+    
+    <title>diptyque eventpage</title>
+</head>
+
+<body>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section">
+           <h1>- &#91;19XM&#93; 캔들,디퓨저 -</h1>
+            <div class="items">
+                    <img src="img/diptyque/3_product_1.jpg" alt="Pineprotector" class="hover">
+               <img src="img/diptyque/3_product_1_pine_protector.jpg" alt="Pineprotector">
+                <div class="items_over">
+                  <div class="itemstxt">
+                        <h2>Lucky Pineprotector Candle</h2>
+                        <p>\ 80,000</p>
+                        <button>구매하기</button>
+                    </div>   
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/diptyque/3_product_2.jpg"  class="hover" alt="Flowers">
+               <img src="img/diptyque/3_product_2_lucky.jpg" alt="Flowers">
+                <div class="items_over">
+                    <div class="itemstxt">
+                        <h2>Lucky Flowers Candle</h2>
+                        <p>\ 80,000</p>
+                        <button>구매하기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/diptyque/3_product_3.jpg"  class="hover" alt="Harmony">
+                <img src="img/diptyque/3_product_3_harmony.jpg" alt="Harmony">
+                <div class="items_over">
+                    <div class="itemstxt">
+                        <h2>Lucky Harmony Candle</h2>
+                        <p>\ 80,000</p>
+                        <button>구매하기</button>
+                    </div>
+                </div>
+            </div>
+            <h1>- &#91;19XM&#93; 선물패키징 -</h1>
+            <div class="items second">
+                <img src="img/diptyque/3_product_4.png"  class="hover" alt="TUBEROSESURPRISEPOUCH">
+                <img src="img/diptyque/3_product_4_hover.png"  alt="TUBEROSESURPRISEPOUCH">
+                <div class="items_over">
+                  <div class="itemstxt">
+                        <h2>DO SON AND TUBEROSE SURPRISE POUCH</h2>
+                        <p>\ 65,000</p>
+                        <button>구매하기</button>
+                    </div>   
+                </div>
+            </div>
+            <div class="items second">
+                <img src="img/diptyque/3_product_5.jpg"  class="hover" alt="Carousel">
+                <img src="img/diptyque/3_product_5_hover.jpg" alt="Carousel">
+                <div class="items_over">
+                    <div class="itemstxt">
+                        <h2>Lucky Carousel Candle</h2>
+                        <p>\ 85,000</p>
+
+                        <button>구매하기</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+<!--        item section end-->
+    <div class="section">
+ <div class="items third">
+                <img src="img/diptyque/3_product_6.png"  class="hover" alt="LIDFOR190GCANDLE">
+                <img src="img/diptyque/3_product_6_hover.png" alt="LIDFOR190GCANDLE">
+                <div class="items_over">
+                    <div class="itemstxt">
+                        <h2>LIMITED EDITION LID FOR 190G CANDLE</h2>
+                        <p>\ 80,000</p>
+                        <button>구매하기</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="section">
+        <div class="contain">
+            <video src="img/diptyque/media-file.mp4" oncontextmenu="return false;" controls controlsList="nodownload"></video>
+        </div>
+    </div>
+    <img src="img/diptyque/3_contents.gif" alt="contents.gif" class="gif">
+    <img src="img/diptyque/lucky_charms.png" alt="contents.gif" class="charms">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var $item = $(".section .items"),
+            $hover = $(".items .hover");
+              
+       $item.hover(function(){
+            var  a = $item.index(this);
+            $hover.eq(a).hide();
+        },function(){
+            $hover.show();
+        })
+    });
+    </script>
+</body>
+</html>

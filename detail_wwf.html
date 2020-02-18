@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,800,900&display=swap;">
+    <title>wwf</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--  파비콘  -->
+    <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/favicon/apple-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon//favicon-16x16.png">
+    <style>
+        body{
+           
+            /* height:500vh; */
+        }
+        div *{
+            /* position: relative; */
+            font-family:'Montserrat', sans-serif; 
+           
+        }
+        .wrap{
+            width:80%;
+            height:auto;
+            margin: 0 auto;
+            position: relative;
+        }
+        aside{
+            width:100px;
+            height:200px;
+            position: fixed;
+            top: 100px;
+            right:50px;
+        }
+        aside:hover{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .box .top_img{
+            width:30vw;
+            height:80vh;
+            position: absolute;
+            background: url(assets/img/web2_wwf.png) 100%/contain;
+            background-position-x: -100px;
+            background-attachment: fixed;
+            left: 0;
+           
+        }
+        .box{ 
+            width:100%;
+            height:100vh;
+            padding-top:5%;
+           position: relative;
+        }
+        .box .txt{
+            width:36%;
+            height:auto;
+          float: right;
+
+        }
+        .box .txt_box{
+            margin-top: 10%;
+            height:460px;
+        }
+        .box .txt_box h1{
+            font-size: 2.8vw;
+            font-weight: 700;
+            margin-top:20px;
+        }
+        .box .txt_box span{
+            font-size: 0.8vw;
+            color:gray;
+            margin-right: 1%;
+            
+        }
+        .box .txt_detail{
+            width:100%;
+            height:180px;
+            line-height: 36px;
+            float: right;
+        }
+        .box .txt_detail span{
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .box .txt_detail p:first-child{
+            float: left;
+            margin-right: 30px;
+        }
+        .box .txt_detail p{
+            /* float: left; */
+        }
+        .box .txt_detail p:last-child{
+            font-size: 1vw;
+            margin-top: 10px;
+        }
+
+        .box .btn{
+            width:200px;
+            height:50px;
+            margin-top: 40px;
+            background-color: #000;
+            color:#fff;
+            border-radius: 100px;
+            font-weight: 900;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+        }
+        .box .btn:hover{
+            box-shadow: 10px 10px 10px 2px rgba(165, 166, 184, 0.2);
+            transition:all 0.5s;
+            background-color: #fff;
+            color:#000;
+           
+        }
+        .box select{
+            width:200px;
+            height:30px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        .contents{
+            z-index:999;
+          text-align: center;
+        }
+        .contents img{
+            width:900px;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <aside>
+            <a href="#" onclick="history.back(-1);">목록으로</br>돌아가기</a>
+        </aside>
+    <div class="box">
+        <div class="top_img">
+            <!-- <img src="assets/img/web2_wwf.png" alt=""> -->
+        </div>
+        <a href="#"></a>
+        <div class="txt">
+        <div class="txt_box">
+        <span># html5&css3</span>
+        <span># standard</span>
+        <span># team project</span>
+        <span># redesign</span>
+        <h1>WWF</br>standard web</h1>
+        <a href="#" class="btn">바로가기</a>
+    </div>
+    <div class="txt_detail">
+        <p><span>My role:</span>디자인</p>
+        <p><span>Timeline:</span> 1주일, 2019년 11월경</p>
+        <p>WWF세계자연보호위원회 홈페이지를 리뉴얼 했습니다.</br>
+            팀작업으로 진행하였으며 디자인으로 참여했습니다.</br>
+             Githurb를 사용하여 협업 진행했습니다.</p>
+    </div>
+    <select name="team" id="team">
+      <option value="협업팀원들 포트폴리오">협업팀원들 포트폴리오</option>  
+      <option value="김보미">김보미</option>  
+      <option value="김유림">김유림</option>  
+      <option value="전현희">전현희</option>  
+    </select>
+    </div>
+</div>
+    <div class="contents">
+        <img src="assets/img/wwf_detail.png" alt="wwf홈페이지 디테일">
+    </div>
+</div>
+<!-- wrap end -->
+
+</body>
+</html>

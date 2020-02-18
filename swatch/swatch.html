@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swatch_css/swatch.css">
+    <!--    font css -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!--    slide css -->
+    <link rel="stylesheet" href="swatch_css/swiper.css">
+    <link rel="stylesheet" href="swatch_css/slick.css">
+    <link rel="stylesheet" href="swatch_css/slick-theme.css">
+    <!--    fontawesome css -->
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    >
+    <link rel="shortcut icon" href="img/android-icon-192x192.png">
+    
+    <!--    jquery  -->
+    <script src=js/jquery-3.4.1.min.js></script>
+    <script src=js/jquery-migrate-1.2.1.min.js></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="js/swiper.js"></script>
+    <script src=js/slick.js> </script>
+    
+    <!--    jquery  -->  
+        
+        <script>
+        $("document").ready(function() {
+            $(".btn").click(function(e){
+                e.preventDefault();
+            })
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
+                spaceBetween: 30,
+                effect: 'fade',
+                loop:true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            }); //main swipe slide
+
+            $(".slider").not('.slick-initialized').slick({
+                centerMode: true,
+                autoplay: true,
+                dots: false,
+                slidesToShow: 3,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        $(".right_wrap .contents4 .video").click(function(){
+        $(this).html("<iframe width='640' height='360' src='https://www.youtube.com/embed/xGFLdQzFIw4?controls=0' frameborder='0' autoplay; encrypted-media; gyroscope picture-in-picture' allowfullscreen>");
+            $(this).css("background", "none");
+    
+    });//video end
+           $("footer .faq-wrap .faq li.q").click(function(){
+        $(this).next().slideToggle(500).siblings("li.a").slideUp(500);
+    })//footer faq end  
+        var $nav = $(".main .nav"),
+            $menuIcon = $(".main .header .menu");
+
+            $menuIcon.click(function(){
+                $nav.toggleClass("close");
+                if( $nav.hasClass("close")){
+                    $menuIcon.find("img").attr("src","img/icon/menu_close.png")
+                }else{
+                    $menuIcon.find("img").attr("src","img/icon/menu.png")
+                }
+            })
+
+    
+        })//script end
+       
+    </script>
+    <title>SWATCH WEB APP</title>
+</head>
+
+<body>
+    <div class="left_wrap"> 
+        <div class="img2"></div>
+        <div class="inner">
+            <img src="img/left_wrap.jpg" alt="">  
+            <div class="txt">
+                <h2>TIME FOR LOVE</h2>
+                <p>1년 중 가장 로맨틱한 날이 곧 다가옵니다!</br>발렌타인데이를 테마로 한 특별한 시계로 </br>당신의 연인을 놀라게 하세요.</p>
+                <div class="btn">
+                    <a href="#">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_wrap">
+<!--       main slider-->
+        <div class="main">
+            <div class="nav">
+                <ul>
+                    <li>collection</li>
+                    <li>women</li>
+                    <li>men</li>
+                    <li>flick flack</li>
+                    <li>all products</li>
+                </ul>
+            </div>
+            <div class="header">  
+                <ul>
+                    <li class="menu">
+                            <img src="img/icon/menu.png" alt="메뉴">
+                            <!-- <img src="img/icon/구성 요소 1 – 1.png" alt=""></li> -->
+                        <li> <a href="#">
+                            <img src="img/icon/logo.png" alt="스와치로고">
+                        </a></li>
+                    <li><img src="img/icon/search.png" alt="search">
+                        </li>
+                </ul>
+            </div>
+            <div class="swiper-container">
+                <div class="slider_txt">
+                    <a href="#">
+                        <span>see collection</span>
+                    </a>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/knightless.png" alt="knightless.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bigbold_jelly.png" alt="bigbold_jelly.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bau.jpg" alt="bau.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/mickey.jpg" alt="mickey.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+        </div>
+<!--        notice box-->
+        <div class="notice">
+            <span>made in</span><span> swiss</span>
+            <p>1983년 스위스를 대표하는 패션 라이프 시계</p>
+        </div>
+<!--       gift for box -->
+        <div class="contents1">
+            <div class="gift">
+                <a href="#">gift for her</a>
+            </div>
+            <div class="gift">
+                <a href="#">gift for him</a>
+            </div>
+        </div>
+<!--        bestsellers product slider-->
+        <div class="contents2">
+            <h1>bestsellers</h1>
+            <section class="slider">
+                <div class="products">
+                    <img src="img/products.png" alt="SISTEM PILOTE">
+                    <div class="desc">
+                        <h2>SISTEM PILOTE</h2>
+                        <span>YIB404</span>
+                        <p>￦ 321,000</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/products%20(2).png" alt="L.E.P.">
+                    <div class="desc">
+                        <h2>L.E.P.</h2>
+                        <span>SUOZ316</span>
+                        <p>￦ 116,000</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/products%20(3).png" alt="DISCO BALL">
+                    <div class="desc">
+                        <h2>DISCO BALL</h2>
+                        <span>FCSP090</span>
+                        <p>￦ 61,000</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/products%20(4).png" alt="SYSTEM THOUGHT">
+                    <div class="desc">
+                        <h2>SYSTEM THOUGHT</h2>
+                        <span>YIB402</span>
+                        <p>￦ 321,000</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/products%20(5).png" alt="SKINSAND">
+                    <div class="desc">
+                        <h2>SKINSAND</h2>
+                        <span>SYXG104</span>
+                        <p>￦ 218,000</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/products%20(6).png" alt="ROYAL KEY">
+                    <div class="desc">
+                        <h2>ROYAL KEY</h2>
+                        <span>SUOB730</span>
+                        <p>￦ 96,000</p>
+                    </div>
+                </div>
+            </section>
+            <div class="btn">
+                <a href="#">view all</a>
+            </div>
+        </div>
+<!--        add banner box-->
+        <div class="ad_banner">
+            <p>언제나 매력적</p>
+            <h2>BIG BOLD COLLECTION</h2>
+            <a href="#">more >></a>
+        </div>
+<!--        collection products slider-->
+        <div class="contents3">
+            <h1>collection products</h1>
+            <div class="swiper-container-c">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/collection_1_96,000.jpg" alt="collection1_revival_watchimg">
+                        <a href="#"><img src="img/collection_1_revival.jpg"alt="collection1_revival_img"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/collection_2_56,000.jpg" alt="collection2_flikflak blueab_watchimg">
+                         <a href="#"><img src="img/collection_2_flikflak%20dots2.0.jpg"alt="collection2_flikflak blueab_img"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/collection_3_10,9000.jpg" alt="collection_3_FLECHE%20D'AMOUR_watchimg">
+                         <a href="#"><img src="img/collection_3_FLECHE%20D'AMOUR.jpg"alt="collection_3_FLECHE%20D'AMOUR_img"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/collection_4_103,000.jpg" alt="collection_4_BERGSTRUSSLI19_watchimg">
+                         <a href="#"><img src="img/collection_4_BERGSTRUSSLI19.jpg"alt="collection_4_BERGSTRUSSLI19_img"></a>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container-c', {
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    hide: false,
+                    
+                },
+            }); //collection slider
+        </script>
+<!--        video box-->
+<div class="contents4">
+   <h1>play collection</h1>
+    <div class="video">
+        <div class="playbtn"><i class="fas fa-play"></i></div>
+    </div>
+    <div class="video_txt">
+        <p>happy holiday</p>
+        <h3>glittervibe</h3>
+        <p>특별한 연말을 함께하세요!</p>
+    </div>
+</div>
+<!-- news letter -->
+<div class="contents5">
+    <div class="news_box">
+       <img src="img/icon/%EC%82%AC%EA%B0%81%ED%98%95%20524.png" alt="news_boximg">
+        <div class="txt">
+            <h3>뉴스레터</h3>
+            <p>스와치의 최신 소식을 놓치지 마세요!</p>
+        </div>
+    </div>
+    <div class="btn">
+                <a href="#">submit</a>
+            </div>
+</div>
+<!--   footer-->
+   <footer>
+       <div class="faq-wrap">
+          <ul class="faq">
+             <li class="q">고객서비스</li>
+              <li class="a"><a href="#">문의하기</a>
+                  <br/>
+              <a href="#">FAQ</a>
+                  <br/>
+              <a href="#">제품 유지관리</a>
+              <li class="q">사이트 이용안내</li>
+              <li class="a">
+              <a href="#">개인정보처리방침</a>
+              <br/>
+              <a href="#">고객센터</a>
+              <br/>
+              <a href="#">매장찾기</a>
+              </li>
+          </ul>
+       </div>
+       <div class="logo"><a href="#"></a></div>
+       <div class="footer_txt">
+           <p>상호 스와치 그룹코리아(주)</p>
+           <p><sapn>대표</sapn> 크리스토프싸비오</p>
+           <p><sapn>사업자 등록번호</sapn> 220-81-01107</p>
+           <p><sapn>주소</sapn>서울특별시 서대문구 충정로 36, 1,10,11층동(충정로3가)</p>
+           <p><sapn>통신판매신고번호</sapn>2018-서울서대문-0765</p>
+           <p><sapn>전화</sapn> 080-559-1472</p>
+           <p><sapn>문의</sapn> <a href="mailto:swatch.online@kr.swatchgroup.com "> swatch.online@kr.swatchgroup.com</a></p>
+            <p><sapn>개인정보관리책임자</sapn> 권주한</p>  
+            <a href="https://shop.swatch.com/ko_kr/?gclid=EAIaIQobChMI3di6o_vw5gIVz6uWCh0nWwweEAAYASAAEgK-afD_BwE&gclsrc=aw.ds" target="_blank"><p>&copy;<span>swatch</span>AG 2020, ALL RIGHTS RESERVED: SWISS WATCHES</p></a>
+       </div>
+   </footer>
+    </div><!--    right wrap end-->
+
+</body></html>

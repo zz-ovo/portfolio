@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 반응형 ---------------------------------------------------------------------- */
+@media screen and (min-width:641px) and (max-width:1400px){
+    *:not(.cursor, .shapes){
+        transition:all 1s;
+    }
+    #section1 .main h1 {
+        font-size: 8em;
+        color: rgb(255, 230, 0);
+      }
+}
+
+  @media screen and (max-width:640px){
+    *:not(.cursor, .shapes){transition:all 1s;}
+    div[id^="section"]{height:40vh;}
+    #section1 .main{height:60vh;}
+    #section1 .shapes{height:60vh;}
+    #section1 .main h1 {font-size: 4em;}
+    aside{display: none;}
+    #section2 .text,.about_l{display: none;}
+    #section2 .m-text{display: inline-block;}
+    #section2 .about_r{width:100%;text-align: center;}
+    #section2 .about_r img{margin:3vw 0;width:60%; height:auto;}
+    #section2 .about_r a{width:100%;text-align: center;}
+    #section2 .about_r i{display: none;}
+  }

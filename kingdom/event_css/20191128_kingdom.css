@@ -1,0 +1,143 @@
+@import url(../event_css/animate.css);
+* {
+  text-decoration: none;
+  list-style: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .section:nth-child(1) {
+    background: url(../img/kingdom/kingdom_main.png) 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative; }
+    .section:nth-child(1) .nav {
+      max-width: 1200px;
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      line-height: 80px; }
+      .section:nth-child(1) .nav.pos {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999; }
+      .section:nth-child(1) .nav .logo {
+        width: 25%; }
+        .section:nth-child(1) .nav .logo img {
+          width: 150px;
+          height: auto; }
+      .section:nth-child(1) .nav ul {
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center; }
+        .section:nth-child(1) .nav ul li {
+          justify-items: space-between;
+          float: left;
+          width: calc(100%/4); }
+          .section:nth-child(1) .nav ul li > a {
+            color: #fff; }
+            .section:nth-child(1) .nav ul li > a:hover {
+              font-weight: bold;
+              font-size: 18px; }
+    .section:nth-child(1) .scroll {
+      position: absolute;
+      color: #fff;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .section:nth-child(1) .scroll span {
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer; }
+        .section:nth-child(1) .scroll span::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 30px;
+          left: 50%;
+          top: 30px;
+          background-color: #fff; }
+  .section:nth-child(2) {
+    background: url(../img/kingdom/page_2.png) 100%;
+    background-size: contain;
+    background-position: center; }
+  .section:nth-child(3) {
+    background: url(../img/kingdom/page_3.png) 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative; }
+    .section:nth-child(3) a {
+      color: #fff;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.4);
+      position: absolute;
+      top: 42%;
+      left: 45%;
+      font-weight: bold; }
+      .section:nth-child(3) a:hover {
+        background-color: red; }
+    .section:nth-child(3) .window {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 1;
+      background-color: #000;
+      display: none; }
+    .section:nth-child(3) .modal {
+      width: 50%;
+      height: 90%;
+      position: fixed;
+      z-index: 9;
+      background: url(../img/kingdom/event_page_popup.png);
+      background-size: cover;
+      background-position: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      position: relative; }
+      .section:nth-child(3) .modal span {
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer; }
+  .section:nth-child(4) {
+    background: url(../img/kingdom/page_4.png) 100%;
+    background-size: contain;
+    background-position: center; }
+
+.indicator {
+  position: fixed;
+  z-index: 99;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%); }
+  .indicator ul li {
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: right; }
+    .indicator ul li a {
+      color: #fff;
+      font-size: 14px; }
+    .indicator ul li a.fz {
+      color: #fff;
+      font-weight: bold; }
+
+/*# sourceMappingURL=20191128_kingdom.css.map */
